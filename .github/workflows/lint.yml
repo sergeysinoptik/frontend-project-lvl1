@@ -1,1 +1,11 @@
-run: make lint
+name: lint
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+
+jobs:
+  run: make lint
