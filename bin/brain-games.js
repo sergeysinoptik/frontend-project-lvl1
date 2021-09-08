@@ -2,8 +2,6 @@
 
 import { name } from '../src/cli.js';
 
-const welcome = (nameStr) => {
-    return 'Hello, ' + name + '!';
-};
+const welcome = `Hello, ${name}!`;
 
-console.log(welcome());
+console.log(welcome);
