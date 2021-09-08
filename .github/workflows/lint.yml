@@ -8,4 +8,7 @@ on:
       - '**'
 
 jobs:
-  run: make lint
+  steps:
+    - name: Run linter
+    run: | 
+      make lint
