@@ -17,12 +17,6 @@ const gcd = (firstNum, secondNum) => {
   return result;
 };
 
-export const correctAnswer = (str) => {
-  const answerArray = str.split(' ');
-  answerArray.sort((a, b) => b - a);
-  return String(gcd(answerArray[0], answerArray[1]));
-};
-
 const getTwoRandomNumbers = () => {
   const firstNumber = getRandomNumber();
   const secondNumber = getRandomNumber();
@@ -30,3 +24,9 @@ const getTwoRandomNumbers = () => {
 };
 
 export const gameQuestion = () => getTwoRandomNumbers();
+
+export const correctAnswer = (str) => {
+  const answerArray = str.split(' ');
+  answerArray.sort((a, b) => b - a);
+  return String(gcd(answerArray[0], answerArray[1]));
+};
